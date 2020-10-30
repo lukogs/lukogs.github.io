@@ -9,9 +9,19 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <style>
-  .responsive {
-  width: 100%;
-}
+      .google-maps {
+          position: relative;
+          padding-bottom: 40%; /*This is the aspect ratio*/
+          height: 0;
+          overflow: hidden;
+      }
+      .google-maps img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important;
+      }}
 </style>
 </head>
 <body>
@@ -54,7 +64,7 @@
     
           </div>
         </div>
-        <div class="parallax"><img src="images/pexels-khwanchai-phanthong-4175028.jpg" height="800" alt="Unsplashed background img 1" class="responsive-img"></div>
+        <div class="google-maps"><img src="images/pexels-khwanchai-phanthong-4175028.jpg" height="800" alt="Unsplashed background img 1" class="responsive-img"></div>
       </div>
 <!-- body section 1 ends -->
 <!-- body section 2 starts  -->
