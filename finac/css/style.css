@@ -178,11 +178,26 @@ h6,
     transition: .3s;
 }
 
-.service-item:hover p>i>h3 {
-    /* margin-bottom: 25px !important; */
+
+
+/*
+.service-item:hover p{
+
     display: none;
-    
 }
+.service-item:hover h3{
+
+    display: none;
+}
+.service-item:hover i{
+
+    display: none;
+}
+
+.service-item:hover #sub1{
+    display: none;
+}*/
+
 
 .subservice{
     position: relative;
@@ -195,9 +210,14 @@ h6,
     transition: .3s;
 }
 
-.subservice:hover h3 {
-    display: none
+.subservice:hover
+.sub1{
+    display: none;
   }
+
+.subservice:hover i{
+    display: none;
+}
 
 .subservice:hover:before {
 content: "sdsdsadasdas"

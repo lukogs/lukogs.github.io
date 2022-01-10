@@ -28,6 +28,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="css/slide.css">
 </head>
 
 <div>
@@ -428,8 +431,27 @@
 
 
     <!-- Testimonial Start -->
-    <!-- <div class="container-fluid bg-secondary p-0">
-        <div class="row g-0">
+    <div class="container-fluid bg-secondary p-0">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">Associate Partners</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="img/101.png"></div>
+            <div class="slide"><img src="img/102.png"></div>
+            <div class="slide"><img src="img/103.png"></div>
+            <div class="slide"><img src="img/104.png"></div>
+            <div class="slide"><img src="img/105.png"></div>
+            <div class="slide"><img src="img/106.png"></div>
+            <div class="slide"><img src="img/107.png"></div>
+            <div class="slide"><img src="img/108.png"></div>
+            <div class="slide"><img src="img/109.png"></div>
+            <div class="slide"><img src="img/110.jpg"></div>
+            <div class="slide"><img src="img/111.png"></div>
+            <div class="slide"><img src="img/112.png"></div>
+            <div class="slide"><img src="img/113.png"></div>
+         </section> 
+        <!-- <div class="row g-0">
             <div class="col-lg-6" style="min-height: 500px;">
                 <div class="position-relative h-100">
                     <img class="position-absolute w-100 h-100" src="img/testimonial.jpg" style="object-fit: cover;">
@@ -460,8 +482,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div> -->
+        </div> -->
+    </div>
     <!-- Testimonial End -->
 
 
@@ -612,6 +634,33 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <!-- Slider Javascript -->
+    <script>
+        $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+      </script>
+
 </body>
 
 </html>
