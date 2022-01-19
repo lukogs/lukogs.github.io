@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #2596be;
+    --primary: #255269;
     --secondary: #F6F6F6;
     --light: #FFFFFF;
     --dark: #152440;
@@ -108,6 +108,10 @@ h6,
     color: var(--primary);
 }
 
+.navcontact a:hover{
+    color: white;
+}
+
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link  {
         padding: 10px 0;
@@ -157,6 +161,10 @@ h6,
     transition: .3s;
 }
 
+.sub1{
+    display: none;
+}
+
 .service-item::after {
     position: absolute;
     content: "";
@@ -174,8 +182,17 @@ h6,
     bottom: -25px;
 }
 
+.service-item:hover h3{
+   opacity: 30%;
+}
+
 .service-item p {
     transition: .3s;
+}
+
+.service-item:hover .sub1{
+    display: block;
+    
 }
 
 
@@ -197,31 +214,6 @@ h6,
 .service-item:hover #sub1{
     display: none;
 }*/
-
-
-.subservice{
-    position: relative;
-    overflow: hidden;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}
-
-.subservice:hover
-.sub1{
-    display: none;
-  }
-
-.subservice:hover i{
-    display: none;
-}
-
-.subservice:hover:before {
-content: "sdsdsadasdas"
-}
 
 .team-item img {
     transform: scale(1.15);
