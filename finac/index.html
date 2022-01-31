@@ -52,6 +52,30 @@
 
     <!-- Slider CSS -->
     <link rel="stylesheet" href="css/slide.css">
+
+    <script>
+        // from https://developers.google.com/apps-script/guides/html/communication#forms
+        // Prevent forms from submitting.
+        function preventFormSubmit() {
+          var forms = document.querySelectorAll('form');
+          for (var i = 0; i < forms.length; i++) {
+            forms[i].addEventListener('submit', function(event) {
+              event.preventDefault();
+            });
+          }
+        }
+        window.addEventListener('load', preventFormSubmit);
+      
+      
+        function handleFormSubmit(formObject) {
+          google.script.run.withSuccessHandler(displayResult).record_data(formObject);
+        }
+        function displayResult(e) {
+          console.log(e);
+          document.getElementById('thankyou_message').style.display = 'block';
+          document.getElementById('gform').style.display = 'none';
+        }
+    </script>
 </head>
 
 <body>
@@ -653,8 +677,8 @@
                 <script type="text/javascript">var submitted=false;</script>
                 <!-- Update the url for thankyou page -->
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted) { alert('Thank you for reaching us. We will get back you shortly'); }"></iframe>
-
-                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2jcHYyiEl49S-a19nf7qdU1pX486hAzMFMHcaskuMbrngJA/formResponse" target="hidden_iframe" method="POST">
+                <!-- Form starts here -->
+                <form class="gform" action="https://script.google.com/macros/s/AKfycbw85RWTdydd3Elw0e-IZtMce6CvqzDwXFw98NrmY3G_T_aKM0dY1Ut4AAMxKx4116Sz1A/exec" method="POST">
                     <div class="row g-3">
                         <div class="col-6">
                             <div class="form-floating">
@@ -701,6 +725,12 @@
                         <div class="col-12">
                             <button class="btn btn-primary w-100 py-3" type="submit" onsubmit="alert('Thank you')">Submit</button>
                         </div>
+                    </div>
+                    <div style="display:none" class="thankyou_message">
+                        <!-- You can customize the thankyou message by editing the code below -->
+                        <div class="alert alert-primary" role="alert">
+                            Message sent. We will contact you shortly.
+                          </div>
                     </div>
                 </form>
             </div>
@@ -815,7 +845,7 @@
     });
       </script>
 
-
+    <!-- <script data-cfasync="false" type="text/javascript" src="js/form-submission.js"></script> -->
 </body>
 
 </html>
