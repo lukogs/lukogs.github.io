@@ -52,7 +52,11 @@
 
     <!-- Slider CSS -->
     <link rel="stylesheet" href="css/slide.css">
-
+    
+    <!-- Ajax script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Form empty submit prevention -->
     <script>
         // from https://developers.google.com/apps-script/guides/html/communication#forms
         // Prevent forms from submitting.
@@ -673,13 +677,9 @@
             <div class="col-lg-6 py-6 px-5">
                 <h1 class="display-5 mb-4">Contact For Any Queries</h1>
 
-                <!-- Page redirection when a form is submitted -->
-                <script type="text/javascript">var submitted=false;</script>
-                <!-- Update the url for thankyou page -->
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted) { alert('Thank you for reaching us. We will get back you shortly'); }"></iframe>
                 <!-- Form starts here -->
-                <form class="gform" action="https://script.google.com/macros/s/AKfycbwqBONBcjJqLiq152HOh-U7WGqBJYvGZk6omcH0P7_zA-Upk2LO/exec" method="POST">
-                    
+                <form id="submit-form" action="">
+                
                     <div class="row g-3">
                         <div class="col-6">
                             <div class="form-floating">
@@ -846,7 +846,26 @@
     });
       </script>
 
-    <!-- <script data-cfasync="false" type="text/javascript" src="js/form-submission.js"></script> -->
+    <!-- https://script.google.com/macros/s/AKfycbwB0CMrGwmIXgSZt74hM2iLcrWXC58wfS4638h2WL3rD7b_dVwLYRBXJmdXv1V-bNAe/exec -->
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwB0CMrGwmIXgSZt74hM2iLcrWXC58wfS4638h2WL3rD7b_dVwLYRBXJmdXv1V-bNAe/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
