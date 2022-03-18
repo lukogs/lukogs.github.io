@@ -191,6 +191,13 @@
     margin-left: 0;
   }
 
+  /* Make Navigation Toggle on Desktop Hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
+}
+
   .top-number{
     font-size: 14px;
   }
@@ -297,7 +304,12 @@
 
 /* XS Portrait */
 @media (max-width: 480px) {
-
+  /* Make Navigation Toggle on Desktop Hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
+  }
 
 }
 
