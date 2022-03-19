@@ -2,7 +2,8 @@
 @media (min-width: 1200px) {
  /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
-      display: block;
+    display: inline-block;
+
       -webkit-animation: fadeInUp 400ms;
       animation: fadeInUp 400ms;
   }
@@ -21,7 +22,7 @@
   
  /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
-      display: block;
+    display: inline-block;
       -webkit-animation: fadeInUp 400ms;
       animation: fadeInUp 400ms;
   }
@@ -102,7 +103,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
   /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
-      display: block;
+    display: inline-block;
       -webkit-animation: fadeInUp 400ms;
       animation: fadeInUp 400ms;
   }
@@ -193,7 +194,7 @@
 
   /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
-    display: block;
+    display: inline-block;
     -webkit-animation: fadeInUp 400ms;
     animation: fadeInUp 400ms;
 }
@@ -306,10 +307,22 @@
 @media (max-width: 480px) {
   /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
-    display: block;
+    display: inline-block;
     -webkit-animation: fadeInUp 400ms;
     animation: fadeInUp 400ms;
   }
 
 }
 
+/* XS Portrait */
+@media (min-width: 375px) and (max-width: 731px){
+  /* Make Navigation Toggle on Desktop Hover */
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
+    justify-content: safe;
+  }
+
+}
