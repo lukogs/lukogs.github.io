@@ -9,11 +9,13 @@
 	
 	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -70,12 +72,14 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
                         <li class="dropdown"><a href="#">Services &nbsp; <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="typing.html">Typing</a></li>
                                 <li><a href="travels.html">Tours & Travels</a></li>
                                 <li><a href="tax.html">Business & Tax</a></li>
+                                <li><a href="events.html">Event Management</a></li>
+
                             </ul>
                         </li>
                         <li><a href="gallery.html">Gallery</a></li>
@@ -91,8 +95,9 @@
         <div class="carousel slide">
             <ol class="carousel-indicators">
                 <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-              <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
                 <li data-target="#main-slider" data-slide-to="2"></li>
+                <li data-target="#main-slider" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
 
@@ -158,6 +163,24 @@ been connected with shuraa business</h2>
                         </div>
                     </div>
                 </div><!--/.item-->
+                <div class="item" style="background-image: url(images/slider/bg4.jpg)">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                    <!-- <h1 class="animation animated-item-1">Events & Travels</h1>
+                                    <h2 class="animation animated-item-2">A unique and memorable experience.</h2> -->
+                                    <!-- <a class="btn-slide animation animated-item-3" href="#">Read More</a> -->
+                                </div>
+                            </div>
+                            <!-- <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                    <img src="images/slider/img3.png" class="img-responsive">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div><!--/.item-->                
             </div><!--/.carousel-inner-->
         </div><!--/.carousel-->
         <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
@@ -168,6 +191,67 @@ been connected with shuraa business</h2>
         </a>
     </section><!--/#main-slider-->
 
+    <section id="feature" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>Features</h2>
+                <!-- <p class="lead">The UAE is in Arabic so we also offer quality
+                legal translation and typing service.
+                help with anything that you require from</p> -->
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-cog"></i>
+                            <h2>Setting up made Easy</h2>
+                            <h3>Process this leaves clients to focus on what</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-comments"></i>
+                            <h2>Translation Services</h2>
+                            <h3>Effective Communications Bring Success</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa-solid fa-map"></i>                            <h2>Travel Packages</h2>
+                            <h3>We provide the best hospitality</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+                
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-user-tie"></i>
+                            <h2>Professional Advice</h2>
+                            <h3>Have a doubt/hiccup in your decision? We are here</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa fa-bullhorn"></i>
+                            <h2>Marketing</h2>
+                            <h3>From Digital Marketing to Direct Marketing </h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <i class="fa-solid fa-shop"></i>
+                            <h2>Rent an Office</h2>
+                            <h3>Office space for your needs</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.services-->
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#feature-->
 
 
     <section id="recent-works">
@@ -175,11 +259,11 @@ been connected with shuraa business</h2>
             <div class="center wow fadeInDown">
                 <h2>BRILLIANT GROUP<br>
                 Typing & Businessman Services
-</h2><br>
+            </h2><br>
 
                 <p class="lead">advice on relevant business setup services
-whether a business has just partnered has
-been connected with shuraa business</p>
+                    whether a business has just partnered has
+                    been connected with shuraa business</p>
             </div>
 
             <div class="row">
@@ -293,7 +377,7 @@ been connected with shuraa business</p>
     <section id="services" class="service-item">
 	   <div class="container">
             <div class="center wow fadeInDown">
-                <h2>Our Service</h2>
+                <h2>Brilliant Group <br> Typing Service</h2>
                 <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>-->
             </div>
 
@@ -399,7 +483,27 @@ been connected with shuraa business</p>
                         </div>
                     </div>
                 </div>
-                          <!--end -->                             
+                          <!--end -->
+                <!-- <div class="col-sm-6 col-md-4">
+                    <div class="services-wrap wow fadeInDown justify-content justify-content">
+                        <div class="pull-left align-center">
+                            <img class="img-responsive" src="images/services/plane-tickets.png">
+                        </div>
+                        <div class="align-center">
+                            <h3 class="">Tours & Sightseeing</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="services-wrap wow fadeInDown justify-content justify-content">
+                        <div class="pull-left align-center">
+                            <img class="img-responsive" src="images/services/cheers.png">
+                        </div>
+                        <div class="align-center">
+                            <h3 class="">Event Managements</h3>
+                        </div>
+                    </div>
+                </div>                                                                    -->
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#services-->
@@ -408,11 +512,84 @@ been connected with shuraa business</p>
     <section id="content">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>Testimonial</h2>
+                <h2>Brilliant Group <br> Travels & Event Managements</h2>
             </div>
             <div class="row">
+                
+                <div class="col-xs-12 col-sm-12 wow fadeInDown">
 
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 wow fadeInDown">
+                    <div class="tab-wrap justify-content"> 
+                         <div class="media">
+                             <div class="parrent pull-left">
+                                 <ul class="nav nav-tabs nav-stacked">
+                                     <li class="active"><a href="#tab1" data-toggle="tab" class="analistic-01">Desert Safari</a></li>
+                                     <li class=""><a href="#tab2" data-toggle="tab" class="analistic-02">Wedding Parties</a></li>
+                                     <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">East Coast Tour</a></li>
+                                     <li class=""><a href="#tab4" data-toggle="tab" class="tehnical">Music Bands</a></li>
+                                     <li class=""><a href="#tab5" data-toggle="tab" class="tehnical">Corporate Meetings & Parties</a></li>
+                                     <li class=""><a href="#tab6" data-toggle="tab" class="tehnical">Event Videography</a></li>
+
+                                 </ul>
+                             </div>
+ 
+                             <div class="parrent media-body">
+                                 <div class="tab-content">
+                                     <div class="tab-pane fade active in" id="tab1">
+                                         <div class="media">
+                                           
+                                             <div class="media-body">
+                                                  <h5>Experience the craziness of the Desert with our Desert Safari.</h5>
+                                                  <img src="images/travels/desert safari.jpg" alt="" width: 100%;
+                                                  height: auto;>
+                                             </div>
+                                         </div>
+                                     </div>
+ 
+                                      <div class="tab-pane fade" id="tab2">
+                                         <div class="media">
+                                            
+                                             <div class="media-body">
+                                                  <h5>Place your worries in our hand and enjoy the blissfull wedding</h5>
+                                                  <img src="images/travels/wedding.jpg" alt="" width: 100%;
+                                                  height: auto;>
+                                             </div>
+                                         </div>
+                                      </div>
+ 
+                                      <div class="tab-pane fade" id="tab3">
+                                          <h5>Is there other entertainment than the beach? See for yourself!!</h5>
+                                        <img src="images/travels/eastcoast.jpg" alt="" width: 100%;
+                                        height: auto;>
+                                      </div>
+                                      
+                                      <div class="tab-pane fade" id="tab4">
+                                        <h5>Swim in the ocean of music</h5>
+
+                                        <img src="images/travels/music.jpg" alt="" width: 100%;
+                                        height: auto;>
+                                      </div>
+ 
+                                      <div class="tab-pane fade" id="tab5">
+                                        <h5>From Meetings to Parties, we have you covered</h5>
+
+                                       <img src="images/travels/corporate.jpg" alt="" width: 100%;
+                                       height: auto;>
+                                      </div>
+
+                                      <div class="tab-pane fade" id="tab6">
+                                        <h5>Social Events, Private Events,... captured at best quality</h5>
+
+                                       <img src="images/travels/eventvideo.jpg" alt="" width: 100%;
+                                       height: auto;>
+                                      </div>
+                                 </div> <!--/.tab-content-->  
+                             </div> <!--/.media-body--> 
+                         </div> <!--/.media-->     
+                     </div><!--/.tab-wrap-->               
+                 </div><!--/.col-sm-6-->
+
+                 <!-- Testimonials -->
+                <!-- <div class="col-xs-12 col-sm-4 wow fadeInDown">
                     <div class="testimonial">
                          <div class="media testimonial-inner">
                             <div class="pull-left">
@@ -436,8 +613,8 @@ been connected with shuraa business</p>
                          </div>
 
                     </div>
-                </div>
-
+                </div> -->
+                <!-- /Testimonials -->
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#content-->

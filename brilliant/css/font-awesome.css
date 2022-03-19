@@ -1338,3 +1338,6 @@
 .fa-plus-square-o:before {
   content: "\f196";
 }
+.fa-shop:before{
+  content: "\f54f";
+}
