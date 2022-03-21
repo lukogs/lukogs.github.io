@@ -331,8 +331,17 @@ input.search-form:hover {
   top:0;
 }
 
+/* ///////////////////// */
+/* NEWLY ADDED CODE */
+.navbar-inverse .navbar-nav .dropdown-menu .dropdown-submenu:before{
+  position: absolute;
+  /* top:0; */
+}
+/* /NEWLY ADDED CODE */
+/* //////////////////////////////// */
+
 .navbar-inverse .navbar-nav .dropdown-menu > li > a {
-  padding: 8px 15px;
+  padding: 8px;
   color: #fff;
 }
 
