@@ -1,3 +1,4 @@
+
 /* lg */ 
 @media (min-width: 1200px) {
   /* Make Navigation Toggle on Desktop Hover */
@@ -6,7 +7,7 @@
        -webkit-animation: fadeInUp 400ms;
        animation: fadeInUp 400ms;
    }
- /* .dropdown:hover{
+/*  .dropdown:active {
    display: block;
    position: relative;
    -webkit-animation: fadeInUp 400ms;
@@ -14,9 +15,9 @@
  }
  .dropdown-submenu {
    position: relative;
- }
+ } */
  
- .dropdown-submenu .dropdown-menu .dropdown {
+/*  .dropdown-submenu .dropdown-menu .dropdown {
    top: 0;
    left: 100%;
    margin-top: -1px;
@@ -28,7 +29,10 @@
      margin-right: -10px;
    }
  
-   
+   .navbar-nav > .phn {
+    display: none;
+  }
+  
  
  }
  
@@ -110,7 +114,10 @@
    ul.social_icons li{
      margin-right: 0;
    }
- 
+   .navbar-nav > .phn {
+    display: none;
+  }
+  
  }
  
  
@@ -198,6 +205,10 @@
    .blog .blog-item .entry-meta > span a{
      font-size: 10px;
    }
+   .navbar-nav > .phn {
+    display: none;
+  }
+  
  }
  
  /* xs */
@@ -313,52 +324,13 @@
      padding-left: 20px;
    }
      
- 
+   .navbar-nav > .phn {
+    display: block;
+  }
+
+  .navbar-nav > .dropdown.web{
+    display: none;
+  }
+  
  }
  
- /* XS Portrait */
- @media (max-width: 480px) {
-   /* Make Navigation Toggle on Desktop Hover */
-   .dropdown:hover .dropdown-menu {
-     display: flex;
-     flex-wrap: wrap;
-     -webkit-animation: fadeInUp 400ms;
-     animation: fadeInUp 400ms;
-     justify-content: safe;
-   }
- 
- }
- 
- /* XS Portrait */
- @media (min-width: 360px) and (max-width: 731px){
-   /* Make Navigation Toggle on Desktop Hover */
-   .dropdown:hover .dropdown-menu {
-     display: flex;
-     flex-wrap: inherit;
-     -webkit-animation: fadeInUp 400ms;
-     animation: fadeInUp 400ms;
-     justify-content: safe;
-   }
-   .navbar-nav > li {
-     margin-left: 0;
-   }
- 
-   .dropdown:hover .dropdown-menu .dropdown-submenu:hover .uplift {
-     display: flex;
-     flex-wrap: wrap;
-     -webkit-animation: fadeInUp 400ms;
-     animation: fadeInUp 400ms;
-     justify-content: safe;
-   }
- 
- }
- 
- @media only screen and (max-width: 854px){
-   .dropdown:hover .dropdown-menu > li > a:hover {
-     display: flex;
-     flex-wrap: wrap;
-     -webkit-animation: fadeInUp 400ms;
-     animation: fadeInUp 400ms;
-     justify-content: safe;
-   }
- }

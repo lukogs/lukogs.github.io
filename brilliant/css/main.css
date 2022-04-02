@@ -2614,5 +2614,10 @@ shortcodes page css
   overflow: auto;
 }
 
+.navbar-nav > .phn {
+  display: none;
+}
+
+
 
 /* Menu */
