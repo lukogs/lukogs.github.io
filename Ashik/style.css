@@ -1,0 +1,411 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+  @font-face{
+    font-family: "RH Futura Bold";
+    src: url("fonts/Futura\ Bold.otf");
+  }
+
+  @font-face{
+    font-family: "RH Futura Book";
+    src: url("fonts/Futura\ Book\ Regular.otf");
+  }
+
+
+  @media only screen and (max-width: 1400px){
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    body{
+      font-family: "RH Futura Book";
+    }
+
+    .full-width{
+      width: 100%;
+      overflow-x: hidden;
+    }
+    .mob-link{
+      color: blue;
+      text-decoration: none;
+      display: block;
+      margin-top: 15px;
+    }
+    .header-t{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #124395;
+      padding: 20px;
+    }
+    .logo{ 
+      width: 300px;
+    }
+    .menu{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-item{
+      margin-left: 35px;
+    }
+    .menu-item a{
+      text-decoration: none;
+      color: white;
+    }
+    .menu-item i{
+      margin-right: 6px;
+    }
+    .header-b{
+      background-color: #ededed;
+      padding: 15px;
+    }
+    .header-b a{
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      text-transform: capitalize;
+      margin-left: 30px;
+      font-size: 18px;
+    }
+    .menu-button{
+      display: none;
+    }
+    .banner{
+      background-image: url("photos/image-2.jpg");
+      background-position: center;
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 20px;
+      height: 350px;
+      font-family: "RH Futura Bold";
+    }
+    .banner p{
+      width: 350px;
+      font-size: 40px;
+      margin-left: 50px;
+      margin-top: 50px;
+    }
+    .find{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .find-one, .find-two{
+      background-color: #ebeae9;
+      padding: 50px;
+    }
+    .input-container{
+      width: 100%;
+      display: flex;
+      background-color: #fff;
+      border: 1px solid dodgerblue;
+      margin-top: 15px;
+    }
+    .input-container input{
+      width: 100%;
+      outline: none;
+      padding: 10px 10px 10px 0px;
+      border: none;
+    }
+    .input-container i{
+      padding: 10px;
+      text-align: center;
+    }
+    .find-icon{
+      display: block;
+      text-align: center;
+      font-size: 40px;
+    }
+    .find-one form{
+      margin-top: 30px;
+    }
+    .find a{
+      color: blue;
+      margin-top: 10px;
+      display: block;
+    }
+    .submit{
+      text-decoration: none;
+      padding: 15px;
+      color: white !important;
+      text-align: center;
+      display: inline-block;
+      margin: auto;
+      background-color: #124395;
+    }
+    .center{
+      text-align: center;
+    }
+    .center p{
+      width: 630px;
+      text-align: center;
+      margin: auto;
+    }
+    .item{
+      display: flex;
+      margin-left: 35px;
+    }
+    .logo-box{
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      background-color: #124395;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid dodgerblue;
+    }
+    .logo-box img{
+      width: 40px;
+    }
+    .text-box{
+      margin-left: 20px;
+    }
+    .text-box p{
+      width: 200px;
+    }
+    .text-box h1{
+      font-size: 30px;
+    }
+    .text-with-logo{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .about{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .about-card{
+      background-color: blue;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgb(184, 184, 184);
+      margin-left: 50px;
+    }
+    .about-card p{
+      margin: 0;
+      width: 150px
+    }
+    .section-1 h1{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-1{
+      margin: 60px 0px;
+      border-bottom: 1px solid rgb(211, 211, 211);
+      border-top: 1px solid rgb(211, 211, 211);
+      padding: 100px;
+    }
+    .section-1 a{
+      display: block;
+      margin-top: 30px;
+    }
+    .footer{
+      background-image: url("photos/image-2.jpg");
+      background-position: center;
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .footer-body{
+      background-color: rgba(0, 0, 255, 0.808);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px 0px;
+      flex-wrap: wrap;
+    }
+    .footer-body ul{
+      color: white;
+      list-style-type: none;
+      margin-left: 25px;
+    }
+    .footer-body ul h3{
+      color: black;
+    }
+    .footer-body ul li a{
+      color: white;
+      text-decoration: none;
+    }
+    .footer-body ul li{
+      margin-top: 15px;
+    }
+    .footer-footer{
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 20px;
+    }
+    .more{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 60px 0px;
+    }
+    .more-card{
+      width: 350px;
+      height: 700px;
+      background-color: #f7f7f7;
+      border: 2px solid blue;
+      margin-left: 20px;
+    }
+    .more-card img{
+      width: 100%;
+      display: block;
+    }
+    .text-container{
+      padding: 30px;
+    }
+    .text-container h1{
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 830px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .find-two{
+      margin-left: 15px;
+    }
+    .about{
+      flex-wrap: wrap;
+    }
+    .about-card{
+      margin-top: 15px;
+    }
+    .more-card{
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 599px){
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .logo{ 
+      width: 150px;
+    }
+    .menu-button{ 
+      display: inline-block;
+      padding: 15px;
+    }
+    .menu-button:hover{
+      cursor: pointer;
+    }
+    .menu-item a{
+      font-size: 12px;
+      display: block;
+    }
+    .menu-item{
+      margin-left: 10px;
+      margin-top: 12px;
+    }
+    .menu{
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .banner{
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner p{
+      margin-left: 0px;
+      margin-top: 0px;
+      color: white;
+      width: auto;
+      text-align: center;
+    }
+    .find{
+      flex-direction: column;
+    }
+    .find-two{
+      margin-top: 20px;
+    }
+    .center h1{
+      width: 300px;
+      margin: auto;
+    }
+    .center p{
+      width: 100%;
+      margin-top: 20px;
+    }
+    .text-with-logo{
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .item{
+      margin-left: 10px;
+    }
+    .about{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-card{
+      margin-left: 0px;
+      margin-top: 15px;
+    }
+    .section-1{
+      padding: 50px 0px;
+    }
+    .footer-body{
+      flex-direction: column;
+    }
+    .more{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .more-card{
+      width: 95%;
+      margin-left: 0px;
+    }
+  }
